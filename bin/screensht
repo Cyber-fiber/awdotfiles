@@ -12,7 +12,7 @@
 screensht
 
 
-screenshot_dir=$(xdg-user-dir PICTURES)/Screenshots/
+screenshot_dir=$HOME/screenshot
 
 # Check save directory
 # Create it if it doesn't exist
@@ -28,7 +28,7 @@ function shot() {
 
 	check_dir
 
-	file_loc="${screenshot_dir}screensht_$(date +%y-%m-%d_%H:%M:%S).png"
+	file_loc="${screenshot_dir}screensht_$(date +%d-%m-%y_%H:%M:%S).png"
 	
 	scrot_command="$1"
 	notif_message="$2"
