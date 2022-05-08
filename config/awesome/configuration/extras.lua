@@ -36,6 +36,7 @@ end)
 
 -- Enable sloppy focus, so that focus follows mouse.
 -- disable by default just click on stuff people 
+-- client.connect_signal("mouse::press", function(c)
 -- client.connect_signal("mouse::enter", function(c)
 --	c:emit_signal("request::activate", "mouse_enter", { raise = false })
 -- end)
